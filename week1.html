@@ -72,8 +72,44 @@
                     </td>
                 </tr>
                
-</tbody>
-</table>
+        </tbody>
+        </table>
+        <br>
+        <h2 >Point cleanet output</h2>
+        <br>
+        <table style="
+        height:50%;
+        width: 70%;">
+            <tbody>
+            <tr>
+            <th>
+                Original Noisy Pointcloud <br>
+                MSE(smooth, noisy) = 0.1711
+            </th>
+            <th>
+                PointCleanNet prediction <br>
+                MSE(noisy, prediction) = 4.5381e-07 <br>
+                MSE(smooth, prediction) = 0.1711
+            </th>
+            </tr>
+
+
+            <tr>
+      
+                <td>
+                    <iframe src="data/point_original.html" title="Smoothed" style="
+                    height: -webkit-fill-available;
+                    width: 70%;"></iframe>
+                </td>
+                <td>
+                    <iframe src="data/point_cleannet.html" title="Smoothed" style="
+                    height: -webkit-fill-available;
+                    width: 70%;"></iframe>
+                </td>
+            </tr>
+           
+    </tbody>
+    </table>
         
        
     </body>
