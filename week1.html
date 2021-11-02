@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body style="text-align: -webkit-center">
+        <h2 >LIX - Week 1</h2>
+
+        <table style="
+        height: 50%;
+        width: 70%;">
+            <tbody><tr>
+            <th>
+                Mesh<br>
+                <span>meshes_bouncing_mesh_0020.obj</span>
+                
+            </th>
+                <td>
+                    <iframe src="data/ground_truth.html" title="Smoothed" style="
+                    height: -webkit-fill-available;
+                    width: 70%;"></iframe>
+                </td>
+            </tr>
+            <tr>
+            <th>
+                Mesh + Noise
+            </th>
+                <td>
+                    <iframe src="data/noisy.html" title="Noisy" style="
+                    height: -webkit-fill-available;
+                    width: 70%;"></iframe>
+                </td>
+            </tr>
+                      
+        </tbody>
+        </table>
+        <br>
+        <h2 >Laplacian Smoothing</h2>
+        <br>
+    <table style="
+            height:50%;
+            width: 90%;">
+                <tbody>
+                <tr>
+                <th>
+                    filter_laplacian  
+                </th>
+                <th>
+                    filter_humphrey
+                </th>
+                <th>
+                    filter_taubin
+                </th>
+                </tr>
+
+
+                <tr>
+          
+                    <td>
+                        <iframe src="data/filter_laplacian.html" title="Smoothed" style="
+                        height: -webkit-fill-available;
+                        width: 70%;"></iframe>
+                    </td>
+                    <td>
+                        <iframe src="data/filter_humphrey.html" title="Smoothed" style="
+                        height: -webkit-fill-available;
+                        width: 70%;"></iframe>
+                    </td>
+                    <td>
+                        <iframe src="data/filter_taubin.html" title="Smoothed" style="
+                        height: -webkit-fill-available;
+                        width: 70%;"></iframe>
+                    </td>
+                </tr>
+               
+</tbody>
+</table>
+        
+       
+    </body>
+</html>
