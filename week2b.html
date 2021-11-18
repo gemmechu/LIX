@@ -12,7 +12,8 @@
             </ul>
 		</div>
         <br>
-        <h2 >Result from Training: KNN Laplacian Cotangent</h2>
+        <h2 >Prediction on Test-Set</h2>
+        <p>PCPNet Pointcloud denoising Training using KNN Laplacian Cotangent weight as the target value.</p>
         <br>
     <table style="
             height:200%;
@@ -132,51 +133,30 @@
         </tbody>
     </table>
     <br>
-    <h2 >Comparison of different Laplacian smoothing</h2>
+    <h2 >Loss</h2>
     <br>
     <table>
         <tbody>
             <tr>
                 <th>
-                   smoothing method 
-                </th>
-                <th>
-                    Chamfer distance(smooth_gt, smooth_laplacian)<br>
-                    mean(evaluation set)
-                 </th>
-                 <th>
-                    MSE(smooth_gt, smooth_laplacian) <br>
-                    mean(evaluation set)
-                 </th>
-
-            </tr>
-            <tr>
-                <th>
-                   Cotangent KNN Laplacian <br>
-                   k = 6
-                </th>
-                <td>
-                    0.0425
+                    loss= MSE || epoch = 500 <br>
+                    [GREEN] test loss: 0.013977
+                    <br>
+                    [RED] train loss: 0.014075
                     
-                </td>
-                <td>
-                    0.1875
-                 </td>
+                </th>
+                
+                    
+                
 
             </tr>
+           
             <tr>
-                <th>
-                   Norm weighted Laplacian of the neighbors<br>
-                   neighbors = mesh.vertex_neighbors
-                </th>
+           
                 <td>
-                    0.0926
+                    <img src="data/week2/loss.png" width="80%">
                    
                 </td>
-                <td>
-                    0.1873
-                 </td>
-
             </tr>
 
         </tbody>

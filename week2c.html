@@ -12,147 +12,53 @@
             </ul>
 		</div>
         <br>
-        <h2 >Deciding over the value of K</h2>
+        <h2 >Evaluate different smoothing methods</h2>
+        <p>distance(smooth_gt, smooth_laplacian) over Evaluation dataset</p>
         <br>
-    <table style="
-            height:112%;
-            width: 96%;">
+        <table style="
+            height:50%;
+            width: 90%;">
                 <tbody>
-                    <tr>
-                        <th>
-                           Fname 
-                        </th>
-                        <th>
-                            meshes_squat2_mesh_0230.obj
-                         </th>
-                         <th>
-                            meshes_bouncing_mesh_0020.obj
-                         </th>
-                         <th>
-                            meshes_march1_mesh_0180.obj
-                         </th>
-                    </tr>
                 <tr>
-                    <th>
-                        K = 3  
-                    </th>
+                <th>
+                    filter_laplacian  <br>
+                    ChamferDistance:  2.6003<br>
+                    MSE:  0.1928
+                </th>
+                <th>
+                    filter_humphrey<br>
+                    ChamferDistance:  0.2644 <br>
+                    MSE: 0.1873
+                </th>
+                <th>
+                    filter_taubin<br>
+                    ChamferDistance:  0.0926 <br>
+                    MSE:  0.1873
+                </th>
+                </tr>
+
+
+                <tr>
+          
                     <td>
-                        <iframe src="data/meshes_squat2_mesh_0230_ctg_3.html" title="Smoothed" style="
+                        <iframe src="data/filter_laplacian.html" title="Smoothed" style="
                         height: -webkit-fill-available;
                         width: 70%;"></iframe>
                     </td>
                     <td>
-                        <iframe src="data/meshes_bouncing_mesh_0020_ctg_3.html" title="Smoothed" style="
+                        <iframe src="data/filter_humphrey.html" title="Smoothed" style="
                         height: -webkit-fill-available;
                         width: 70%;"></iframe>
                     </td>
                     <td>
-                        <iframe src="data/meshes_march1_mesh_0180_ctg_3.html" title="Smoothed" style="
+                        <iframe src="data/filter_taubin.html" title="Smoothed" style="
                         height: -webkit-fill-available;
                         width: 70%;"></iframe>
                     </td>
                 </tr>
-
-                <tr>
-                    <th>
-                        K = 5  
-                    </th>
-                    <td>
-                        <iframe src="data/meshes_squat2_mesh_0230_ctg_5.html" title="Smoothed" style="
-                        height: -webkit-fill-available;
-                        width: 70%;"></iframe>
-                    </td>
-                    <td>
-                        <iframe src="data/meshes_bouncing_mesh_0020_ctg_5.html" title="Smoothed" style="
-                        height: -webkit-fill-available;
-                        width: 70%;"></iframe>
-                    </td>
-                    <td>
-                        <iframe src="data/meshes_march1_mesh_0180_ctg_5.html" title="Smoothed" style="
-                        height: -webkit-fill-available;
-                        width: 70%;"></iframe>
-                    </td>
-                </tr>
-
-                <tr>
-                    <th>
-                        K = 6 
-                    </th>
-                    <td>
-                        <iframe src="data/meshes_squat2_mesh_0230_ctg_6.html" title="Smoothed" style="
-                        height: -webkit-fill-available;
-                        width: 70%;"></iframe>
-                    </td>
-                    <td>
-                        <iframe src="data/meshes_bouncing_mesh_0020_ctg_6.html" title="Smoothed" style="
-                        height: -webkit-fill-available;
-                        width: 70%;"></iframe>
-                    </td>
-                    <td>
-                        <iframe src="data/meshes_march1_mesh_0180_ctg_6.html" title="Smoothed" style="
-                        height: -webkit-fill-available;
-                        width: 70%;"></iframe>
-                    </td>
-                </tr>
-
-                
                
         </tbody>
-    </table>
-    <br>
-    <h2 >Comparison of different Laplacian smoothing</h2>
-    <br>
-    <table>
-        <tbody>
-            <tr>
-                <th>
-                   smoothing method 
-                </th>
-                <th>
-                    Chamfer distance(smooth_gt, smooth_laplacian)<br>
-                    mean(evaluation set)
-                 </th>
-                 <th>
-                    MSE(smooth_gt, smooth_laplacian) <br>
-                    mean(evaluation set)
-                 </th>
-
-            </tr>
-            <tr>
-                <th>
-                   Cotangent KNN Laplacian <br>
-                   k = 6
-                </th>
-                <td>
-                    0.0425
-                    
-                </td>
-                <td>
-                    0.1875
-                 </td>
-
-            </tr>
-            <tr>
-                <th>
-                   Norm weighted Laplacian of the neighbors<br>
-                   neighbors = mesh.vertex_neighbors
-                </th>
-                <td>
-                    0.0926
-                   
-                </td>
-                <td>
-                    0.1873
-                 </td>
-
-            </tr>
-
-        </tbody>
-
-    </table>  
-    <br>
-
-       
+        </table>
        
     </body>
 </html>
