@@ -1,0 +1,190 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body style="text-align: -webkit-center">
+        <h2 >LIX - Week 2&3</h2>
+        <div>
+			<ul>
+                <li class="nav"><a href="week2.html">pre-training</a></li>
+               <li class="nav"> <a href="week2b.html" style="background-color: #33de58;">training</a></li>
+                <li class="nav"><a href="week2c.html">related things</a></li>
+            </ul>
+		</div>
+        <br>
+        <h2 >Result from Training: KNN Laplacian Cotangent</h2>
+        <br>
+    <table style="
+            height:200%;
+            width: 96%;">
+                <tbody>
+                    <tr>
+                        <th>
+                           Noisy 
+                        </th>
+                        <th>
+                            GT
+                         </th>
+                         <th>
+                            Prediction
+                         </th>
+
+                    </tr>
+                <tr>
+                    <td>
+                        <iframe src="data/week2/meshes_squat1_mesh_0050_noisy.html" style="
+                        height: 100%; width: 80%;"></iframe>
+                        <br>
+                        <span> meshes_squat1_mesh_0050</span>
+                    </td>
+                    <td>
+                        <iframe src="data/week2/meshes_squat1_mesh_0050_gt.html" style="
+                        height: 100%; width: 80%;"></iframe>
+                        
+                        
+                    </td>
+                    <td>
+                        <iframe src="data/week2/meshes_squat1_mesh_0050_pred.html" style="
+                        height:100%; width: 80%;"></iframe>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <iframe src="data/week2/meshes_bouncing_mesh_0130_noisy.html" style="
+                        height: 100%; width: 80%;"></iframe>
+                        <br>
+                        <span> meshes_bouncing_mesh_0130</span>
+                    </td>
+                    <td>
+                        <iframe src="data/week2/meshes_bouncing_mesh_0130_gt.html" style="
+                        height: 100%; width: 80%;"></iframe>
+                        
+                        
+                    </td>
+                    <td>
+                        <iframe src="data/week2/meshes_bouncing_mesh_0130_pred.html" style="
+                        height:100%; width: 80%;"></iframe>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <iframe src="data/week2/meshes_handstand_mesh_0060_noisy.html" style="
+                        height: 100%; width: 80%;"></iframe>
+                        <br>
+                        <span> meshes_handstand_mesh_0060</span>
+                    </td>
+                    <td>
+                        <iframe src="data/week2/meshes_handstand_mesh_0060_gt.html" style="
+                        height: 100%; width: 80%;"></iframe>
+                        
+                        
+                    </td>
+                    <td>
+                        <iframe src="data/week2/meshes_handstand_mesh_0060_pred.html" style="
+                        height:100%; width: 80%;"></iframe>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <iframe src="data/week2/meshes_bouncing_mesh_0150_noisy.html" style="
+                        height: 100%; width: 80%;"></iframe>
+                        <br>
+                        <span> meshes_bouncing_mesh_0150</span>
+                    </td>
+                    <td>
+                        <iframe src="data/week2/meshes_bouncing_mesh_0150_gt.html" style="
+                        height: 100%; width: 80%;"></iframe>
+                        
+                        
+                    </td>
+                    <td>
+                        <iframe src="data/week2/meshes_bouncing_mesh_0150_pred.html" style="
+                        height:100%; width: 80%;"></iframe>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <iframe src="data/week2/meshes_crane_mesh_0110_noisy.html" style="
+                        height: 100%; width: 80%;"></iframe>
+                        <br>
+                        <span> meshes_crane_mesh_0110</span>
+                    </td>
+                    <td>
+                        <iframe src="data/week2/meshes_crane_mesh_0110_gt.html" style="
+                        height: 100%; width: 80%;"></iframe>
+                        
+                        
+                    </td>
+                    <td>
+                        <iframe src="data/week2/meshes_crane_mesh_0110_pred.html" style="
+                        height:100%; width: 80%;"></iframe>
+                        <br>
+                    </td>
+                </tr>
+               
+                
+
+               
+        </tbody>
+    </table>
+    <br>
+    <h2 >Comparison of different Laplacian smoothing</h2>
+    <br>
+    <table>
+        <tbody>
+            <tr>
+                <th>
+                   smoothing method 
+                </th>
+                <th>
+                    Chamfer distance(smooth_gt, smooth_laplacian)<br>
+                    mean(evaluation set)
+                 </th>
+                 <th>
+                    MSE(smooth_gt, smooth_laplacian) <br>
+                    mean(evaluation set)
+                 </th>
+
+            </tr>
+            <tr>
+                <th>
+                   Cotangent KNN Laplacian <br>
+                   k = 6
+                </th>
+                <td>
+                    0.0425
+                    
+                </td>
+                <td>
+                    0.1875
+                 </td>
+
+            </tr>
+            <tr>
+                <th>
+                   Norm weighted Laplacian of the neighbors<br>
+                   neighbors = mesh.vertex_neighbors
+                </th>
+                <td>
+                    0.0926
+                   
+                </td>
+                <td>
+                    0.1873
+                 </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>  
+    <br>
+
+       
+       
+    </body>
+</html>
