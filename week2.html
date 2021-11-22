@@ -109,19 +109,34 @@
                    smoothing method 
                 </th>
                 <th>
-                    Chamfer distance(smooth_gt, smooth_laplacian)<br>
+                    Chamfer distance<br>
                     mean(evaluation set)
                  </th>
                  <th>
-                    MSE(smooth_gt, smooth_laplacian) <br>
+                    MSE <br>
                     mean(evaluation set)
                  </th>
 
             </tr>
             <tr>
                 <th>
-                   Cotangent KNN Laplacian <br>
-                   k = 6
+                   Ground truth <br>
+                   distance(smooth, noisy)
+                </th>
+                <td>
+                    0.0289
+                    
+                </td>
+                <td>
+                    0.1879
+                 </td>
+
+            </tr>
+            <tr>
+                <th>
+                   Our Model <br>
+                   distance(smooth_gt, prediction) <br>
+                   with k = 6
                 </th>
                 <td>
                     0.0425
@@ -134,8 +149,9 @@
             </tr>
             <tr>
                 <th>
-                   Norm weighted Laplacian of the neighbors<br>
-                   neighbors = mesh.vertex_neighbors
+                   Trimesh smoothing<br>
+                   distance(smooth_gt, prediction)
+                   
                 </th>
                 <td>
                     0.0926
