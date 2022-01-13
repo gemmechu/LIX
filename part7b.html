@@ -1,0 +1,168 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body style="text-align: -webkit-center">
+        <div style="text-align: -webkit-left;">
+			<ul>
+                <li class="nav"><a href="https://newboxwhodis.eecs.umich.edu/~ghassena/2021/mesh%20denoising/">Week 0</a></li>
+                <li class="nav"><a href="week1.html">Week 1</a></li>
+                <li class="nav"><a href="week2.html" >Week 2 & 3</a></li>
+                <li class="nav"><a href="week4.html" >Week 4,5 & 6</a></li>
+                <li class="nav"><a href="part7.html" style="background-color: #27cece;">Part 7</a></li>
+                <li class="nav"><a href="part8.html" >Part 8</a></li>
+            </ul>
+		</div>
+        <h2 >LIX - Evaluation on Test set</h2>
+        <div>
+			<ul>
+                <li class="nav"><a href="part7.html" >Quantitative</a></li>
+                <li class="nav"><a href="part7b.html" style="background-color: #33de58;">Qualitative</a></li>
+   
+            </ul>
+		</div>
+    <br>
+    <p>PCPNet Pointcloud denoising Training using KNN Laplacian Cotangent weight as the target value.</p>
+        <br>
+        <table style="
+            height:200%;
+            width: 96%;">
+                <tbody>
+                    <tr>
+                        <th>
+                            Method 
+                         </th>
+                        <th>
+                           Noisy 
+                        </th>
+                        <th>
+                            GT
+                         </th>
+                         <th>
+                            smoothed
+                         </th>
+
+                    </tr>
+                <tr>
+                    <th>
+                        trimesh equal weight
+                    </th>
+                   
+                    <td>
+                        <iframe src="data/week2/meshes_squat1_mesh_0050_noisy.html" style="
+                        height: 100%; width: 80%;"></iframe>
+                        <br>
+                        <span> meshes_squat1_mesh_0050</span>
+                    </td>
+                    <td>
+                        <iframe src="data/week2/meshes_squat1_mesh_0050_gt.html" style="
+                        height: 100%; width: 80%;"></iframe>
+                        <br><b>Chamfer:</b>  0.0285   <b>MSE:</b>  0.2179 <br>
+                        
+                    </td>
+                    <td>
+                        <iframe src="data/week2/meshes_squat1_mesh_0050_pred.html" style="
+                        height:100%; width: 80%;"></iframe>
+                       <br><b>Chamfer:</b>  0.0564   <b>MSE:</b>  0.2203 <br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        trimesh distance
+                    </th>
+            
+                    <td>
+                        <iframe src="data/week2/meshes_squat1_mesh_0050_noisy.html" style="
+                        height: 100%; width: 80%;"></iframe>
+                        <br>
+                        <span> meshes_squat1_mesh_0050</span>
+                    </td>
+                    <td>
+                        <iframe src="data/week2/meshes_squat1_mesh_0050_gt.html" style="
+                        height: 100%; width: 80%;"></iframe>
+                        <br><b>Chamfer:</b>  0.0285   <b>MSE:</b>  0.2179 <br>
+                        
+                    </td>
+                    <td>
+                        <iframe src="data/week2/meshes_squat1_mesh_0050_pred.html" style="
+                        height:100%; width: 80%;"></iframe>
+                       <br><b>Chamfer:</b>  0.0564   <b>MSE:</b>  0.2203 <br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Cotangent(Ours)
+                    </th>
+                   
+                    <td>
+                        <iframe src="data/week2/meshes_squat1_mesh_0050_noisy.html" style="
+                        height: 100%; width: 80%;"></iframe>
+                        <br>
+                        <span> meshes_squat1_mesh_0050</span>
+                    </td>
+                    <td>
+                        <iframe src="data/week2/meshes_squat1_mesh_0050_gt.html" style="
+                        height: 100%; width: 80%;"></iframe>
+                        <br><b>Chamfer:</b>  0.0285   <b>MSE:</b>  0.2179 <br>
+                        
+                    </td>
+                    <td>
+                        <iframe src="data/week2/meshes_squat1_mesh_0050_pred.html" style="
+                        height:100%; width: 80%;"></iframe>
+                       <br><b>Chamfer:</b>  0.0564   <b>MSE:</b>  0.2203 <br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Total Denoising
+                    </th>
+                
+                    <td>
+                        <iframe src="data/week2/meshes_squat1_mesh_0050_noisy.html" style="
+                        height: 100%; width: 80%;"></iframe>
+                        <br>
+                        <span> meshes_squat1_mesh_0050</span>
+                    </td>
+                    <td>
+                        <iframe src="data/week2/meshes_squat1_mesh_0050_gt.html" style="
+                        height: 100%; width: 80%;"></iframe>
+                        <br><b>Chamfer:</b>  0.0285   <b>MSE:</b>  0.2179 <br>
+                        
+                    </td>
+                    <td>
+                        <iframe src="data/week2/meshes_squat1_mesh_0050_pred.html" style="
+                        height:100%; width: 80%;"></iframe>
+                       <br><b>Chamfer:</b>  0.0564   <b>MSE:</b>  0.2203 <br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        PointCleanNet
+                    </th>
+                    <td>
+                        <iframe src="data/week2/meshes_squat1_mesh_0050_noisy.html" style="
+                        height: 100%; width: 80%;"></iframe>
+                        <br>
+                        <span> meshes_squat1_mesh_0050</span>
+                    </td>
+                    <td>
+                        <iframe src="data/week2/meshes_squat1_mesh_0050_gt.html" style="
+                        height: 100%; width: 80%;"></iframe>
+                        <br><b>Chamfer:</b>  0.0285   <b>MSE:</b>  0.2179 <br>
+                        
+                    </td>
+                    <td>
+                        <iframe src="data/week2/meshes_squat1_mesh_0050_pred.html" style="
+                        height:100%; width: 80%;"></iframe>
+                       <br><b>Chamfer:</b>  0.0564   <b>MSE:</b>  0.2203 <br>
+                    </td>
+                </tr>
+               
+           
+
+        </tbody>
+
+    </table>  
+       
+    </body>
+</html>
