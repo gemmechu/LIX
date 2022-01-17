@@ -1,0 +1,242 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body style="text-align: -webkit-center">
+        <div style="text-align: -webkit-left;">
+			<ul>
+                <li class="nav"><a href="https://newboxwhodis.eecs.umich.edu/~ghassena/2021/mesh%20denoising/">Week 0</a></li>
+                <li class="nav"><a href="week1.html">Week 1</a></li>
+                <li class="nav"><a href="week2.html" >Week 2 & 3</a></li>
+                <li class="nav"><a href="week4.html" >Week 4,5 & 6</a></li>
+                <li class="nav"><a href="part7.html" style="background-color: #27cece;">Part 7</a></li>
+                <li class="nav"><a href="part8.html" >Part 8</a></li>
+            </ul>
+		</div>
+        <h2 >LIX - Evaluation on Test set</h2>
+        <div>
+			<ul>
+                <li class="nav"><a href="part7.html" >Quantitative</a></li>
+                <li class="nav"><a href="part7b.html">Qualitative</a></li>
+                <li class="nav"><a href="part7c.html" style="background-color: #33de58;">all-testset</a></li>
+   
+            </ul>
+		</div>
+    <br>
+    <p>PCPNet Pointcloud denoising Training using KNN Laplacian Cotangent weight as the target value.</p>
+        <br>
+        <table>
+                <tbody>
+                    <tr>
+                        <th>
+                            Name 
+                         </th>
+                        <th>
+                           Noisy 
+                        </th>
+                        <th>
+                            Trimesh equal weight
+                         </th>
+                         <th>
+                            Trimesh distance
+                         </th>
+                         <th>
+                            Total Denoising
+                         </th>
+                         <th>
+                            PointCleanNet	
+                         </th>
+                         <th>
+                            Cotangent(Ours)
+                         </th>
+
+                    </tr>
+                    <tr>
+                        <th> meshes_bouncing_mesh_0090.obj </th>
+                        <td> 0.293047 </td>
+                        <td> 0.304231 </td>
+                        <td> 0.1953 </td>
+                        <td> 0 </td>
+                        <td> 0 </td>
+                        <td> 0.29 </td>
+                        </tr>
+                        <tr>
+                        <th> meshes_march2_mesh_0100.obj </th>
+                        <td> 0.1483 </td>
+                        <td> 0.278714 </td>
+                        <td> 0.1452 </td>
+                        <td> 0 </td>
+                        <td> 0 </td>
+                        <td> 0.3683 </td>
+                        </tr>
+                        <tr>
+                        <th> meshes_crane_mesh_0120.obj </th>
+                        <td> 0.18003 </td>
+                        <td> 0.285197 </td>
+                        <td> 0.1545 </td>
+                        <td> 0 </td>
+                        <td> 0 </td>
+                        <td> 0.3683 </td>
+                        </tr>
+                        <tr>
+                        <th> meshes_jumping_mesh_0020.obj </th>
+                        <td> 0.38235 </td>
+                        <td> 0.30396 </td>
+                        <td> 0.2182 </td>
+                        <td> 0 </td>
+                        <td> 0 </td>
+                        <td> 0.2898 </td>
+                        </tr>
+                        <tr>
+                        <th> meshes_crane_mesh_0030.obj </th>
+                        <td> 0.740744 </td>
+                        <td> 0.361554 </td>
+                        <td> 0.3399 </td>
+                        <td> 0 </td>
+                        <td> 0 </td>
+                        <td> 0.2948 </td>
+                        </tr>
+                        <tr>
+                        <th> meshes_march2_mesh_0150.obj </th>
+                        <td> 0.535939 </td>
+                        <td> 0.32133 </td>
+                        <td> 0.269 </td>
+                        <td> 0 </td>
+                        <td> 0 </td>
+                        <td> 0.3781 </td>
+                        </tr>
+                        <tr>
+                        <th> meshes_handstand_mesh_0150.obj </th>
+                        <td> 1.065418 </td>
+                        <td> 0.426361 </td>
+                        <td> 0.457 </td>
+                        <td> 0 </td>
+                        <td> 0 </td>
+                        <td> 0.4946 </td>
+                        </tr>
+                        <tr>
+                        <th> meshes_march2_mesh_0120.obj </th>
+                        <td> 1.971318 </td>
+                        <td> 0.586471 </td>
+                        <td> 0.7 </td>
+                        <td> 0 </td>
+                        <td> 0 </td>
+                        <td> 0.4328 </td>
+                        </tr>
+                        <tr>
+                        <th> meshes_march2_mesh_0200.obj </th>
+                        <td> 0.158288 </td>
+                        <td> 0.277111 </td>
+                        <td> 0.1485 </td>
+                        <td> 0 </td>
+                        <td> 0 </td>
+                        <td> 0.6288 </td>
+                        </tr>
+                        <tr>
+                        <th> meshes_squat2_mesh_0100.obj </th>
+                        <td> 0.241042 </td>
+                        <td> 0.281186 </td>
+                        <td> 0.1728 </td>
+                        <td> 0 </td>
+                        <td> 0 </td>
+                        <td> 1.073 </td>
+                        </tr>
+                        <tr>
+                        <th> meshes_squat2_mesh_0190.obj </th>
+                        <td> 1.17215 </td>
+                        <td> 0.446751 </td>
+                        <td> 0.4874 </td>
+                        <td> 0 </td>
+                        <td> 0 </td>
+                        <td> 0.2951 </td>
+                        </tr>
+                        <tr>
+                        <th> meshes_march2_mesh_0170.obj </th>
+                        <td> 0.478889 </td>
+                        <td> 0.311349 </td>
+                        <td> 0.2481 </td>
+                        <td> 0 </td>
+                        <td> 0 </td>
+                        <td> 0.3229 </td>
+                        </tr>
+                        <tr>
+                        <th> fandisk_n1.obj </th>
+                        <td> 81.417389 </td>
+                        <td> 234.493973 </td>
+                        <td> 172.2258 </td>
+                        <td> 0 </td>
+                        <td> 0 </td>
+                        <td> 0.6627 </td>
+                        </tr>
+                        <tr>
+                        <th> part-Lp_n1.obj </th>
+                        <td> 0.284359 </td>
+                        <td> 0.59152 </td>
+                        <td> 0.5017 </td>
+                        <td> 0 </td>
+                        <td> 0 </td>
+                        <td> 0.423 </td>
+                        </tr>
+                        <tr>
+                        <th> leg_n1.obj </th>
+                        <td> 42.782658 </td>
+                        <td> 5.918296 </td>
+                        <td> 10.4125 </td>
+                        <td> 0 </td>
+                        <td> 0 </td>
+                        <td> 369.0534 </td>
+                        </tr>
+                        <tr>
+                        <th> chinese-lion_n3.obj </th>
+                        <td> 3613.05542 </td>
+                        <td> 2376.643311 </td>
+                        <td> 1309.8953 </td>
+                        <td> 0 </td>
+                        <td> 0 </td>
+                        <td> 0.6169 </td>
+                        </tr>
+                        <tr>
+                        <th> turbine-Lp_n2.obj </th>
+                        <td> 0.089865 </td>
+                        <td> 0.024647 </td>
+                        <td> 0.0234 </td>
+                        <td> 0 </td>
+                        <td> 0 </td>
+                        <td> 54.555 </td>
+                        </tr>
+                        <tr>
+                        <th> block_n3.obj </th>
+                        <td> 375.978638 </td>
+                        <td> 131.430161 </td>
+                        <td> 121.7633 </td>
+                        <td> 0 </td>
+                        <td> 0 </td>
+                        <td> 2892.3174 </td>
+                        </tr>
+                        <tr>
+                        <th> joint_n1.obj </th>
+                        <td> 0.063501 </td>
+                        <td> 0.091212 </td>
+                        <td> 0.0636 </td>
+                        <td> 0 </td>
+                        <td> 0 </td>
+                        <td> 0.0316 </td>
+                        </tr>
+                        <tr>
+                        <th> chinese-lion_n1.obj </th>
+                        <td> 402.797028 </td>
+                        <td> 2014.213989 </td>
+                        <td> 781.6505 </td>
+                        <td> 0 </td>
+                        <td> 0 </td>
+                        <td> 180.1153 </td>
+                        </tr>
+                        
+            
+
+        </tbody>
+
+    </table>  
+       
+    </body>
+</html>

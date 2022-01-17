@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link rel="stylesheet" href="style2.css" />
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body style="text-align: -webkit-center">
         <div style="text-align: -webkit-left;">
@@ -18,6 +18,7 @@
 			<ul>
                 <li class="nav"><a href="part7.html" style="background-color: #33de58;">Quantitative</a></li>
                 <li class="nav"><a href="part7b.html">Qualitative</a></li>
+                <li class="nav"><a href="part7c.html">all-testset</a></li>
    
             </ul>
 		</div>
@@ -31,36 +32,37 @@
                     Methods 
                  </th>
                  <th>
-                    Avg chamfer distance
+                    Avg chamfer distance from Smooth-gt
                  </th>
             </tr>
             <tr>
                 <td>
-                    trimesh equal weight
+                    Noisy-gt
                 </td>
                 <td>
-                    0.4720
+                    226.19
                 </td>
 
             </tr>
             <tr>
                 <td>
-                    trimesh distance
+                    Trimesh equal weight
                 </td>
                 <td>
-                    0.4720
+                    238.379
                 </td>
 
             </tr>
             <tr>
                 <td>
-                    Cotangent(Ours)
+                    Trimesh distance
                 </td>
                 <td>
-                    0.4720
+                    120.0036
                 </td>
 
             </tr>
+           
             <tr>
                 <td>
                     Total Denoising
@@ -72,14 +74,23 @@
             </tr>
             <tr>
                 <td>
-                    Tubmin
+                    PointCleanNet
                 </td>
                 <td>
-                    0.4720
+                    1418.0261
                 </td>
 
             </tr>
-           
+            <tr>
+                <td>
+                    Cotangent(Ours)
+                </td>
+                <td>
+                    257.8963
+                </td>
+
+            </tr>
+            
 
         </tbody>
 
