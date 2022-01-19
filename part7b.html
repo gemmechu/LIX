@@ -27,138 +27,135 @@
         <br>
         <table style="
             height:200%;
-            width: 96%;">
+            width: 150%;">
                 <tbody>
                     <tr>
                         <th>
-                            Method 
+                            Name 
                          </th>
                         <th>
                            Noisy 
                         </th>
                         <th>
-                            GT
+                            Trimesh equal weight
                          </th>
                          <th>
-                            smoothed
+                            Trimesh distance
+                         </th>
+                         <th>
+                            Total Denoising
+                         </th>
+                         <th>
+                            PointCleanNet	
+                         </th>
+                         <th>
+                            Cotangent(Ours)
                          </th>
 
                     </tr>
-                <tr>
-                    <th>
-                        trimesh equal weight
-                    </th>
-                   
-                    <td>
-                        <iframe src="data/week2/meshes_squat1_mesh_0050_noisy.html" style="
-                        height: 100%; width: 80%;"></iframe>
-                        <br>
-                        <span> meshes_squat1_mesh_0050</span>
-                    </td>
-                    <td>
-                        <iframe src="data/week2/meshes_squat1_mesh_0050_gt.html" style="
-                        height: 100%; width: 80%;"></iframe>
-                        <br><b>Chamfer:</b>  0.0285   <b>MSE:</b>  0.2179 <br>
+                    <tr>
+                        <th> chinese-lion_n3 </th>
+                         <td>
+                        <iframe src="data/part7/noisy/chinese-lion_n3.html"  style="height: 100%; width: 95%;"></iframe>
+                        <br><b>Chamfer:</b> 3613.05542 </td>
+                         <td>
+                        <iframe src="data/part7/weight_eq/chinese-lion_n3.html"  style="height: 100%; width: 95%;"></iframe>
+                        <br><b>Chamfer:</b> 2376.643311 </td>
+                         <td>
+                        <iframe src="data/part7/weight_neq/chinese-lion_n3.html"  style="height: 100%; width: 95%;"></iframe>
+                        <br><b>Chamfer:</b> 1309.8953 </td>
+                         <td>
+                        <br><b>Chamfer:</b> 0 </td>
+                         <td>
+                        <iframe src="data/part7/point_cleannet/chinese-lion_n3.html"  style="height: 100%; width: 95%;"></iframe>
+                        <br><b>Chamfer:</b> 4407.291992 </td>
+                         <td>
+                        <iframe src="data/part7/cotan/chinese-lion_n3.html"  style="height: 100%; width: 95%;"></iframe>
+                        <br><b>Chamfer:</b> 2892.3174 </td>
+                        </tr>
+                        <tr>
+                        <th> chinese-lion_n1 </th>
+                         <td>
+                        <iframe src="data/part7/noisy/chinese-lion_n1.html"  style="height: 100%; width: 95%;"></iframe>
+                        <br><b>Chamfer:</b> 402.797028 </td>
+                         <td>
+                        <iframe src="data/part7/weight_eq/chinese-lion_n1.html"  style="height: 100%; width: 95%;"></iframe>
+                        <br><b>Chamfer:</b> 2014.213989 </td>
+                         <td>
+                        <iframe src="data/part7/weight_neq/chinese-lion_n1.html"  style="height: 100%; width: 95%;"></iframe>
+                        <br><b>Chamfer:</b> 781.6505 </td>
+                         <td>
+                        <br><b>Chamfer:</b> 0 </td>
+                         <td>
+                        <iframe src="data/part7/point_cleannet/chinese-lion_n1.html"  style="height: 100%; width: 95%;"></iframe>
+                        <br><b>Chamfer:</b> 1974.508789 </td>
+                         <td>
+                        <iframe src="data/part7/cotan/chinese-lion_n1.html"  style="height: 100%; width: 95%;"></iframe>
+                        <br><b>Chamfer:</b> 2170.5615 </td>
+                        </tr>
+                        <tr>
+                        <th> meshes_bouncing_mesh_0090 </th>
+                         <td>
+                        <iframe src="data/part7/noisy/meshes_bouncing_mesh_0090.html"  style="height: 100%; width: 95%;"></iframe>
+                        <br><b>Chamfer:</b> 0.293047 </td>
+                         <td>
+                        <iframe src="data/part7/weight_eq/meshes_bouncing_mesh_0090.html"  style="height: 100%; width: 95%;"></iframe>
+                        <br><b>Chamfer:</b> 0.304231 </td>
+                         <td>
+                        <iframe src="data/part7/weight_neq/meshes_bouncing_mesh_0090.html"  style="height: 100%; width: 95%;"></iframe>
+                        <br><b>Chamfer:</b> 0.1953 </td>
+                         <td>
+                        <br><b>Chamfer:</b> 0 </td>
+                         <td>
+                        <iframe src="data/part7/point_cleannet/meshes_bouncing_mesh_0090.html"  style="height: 100%; width: 95%;"></iframe>
+                        <br><b>Chamfer:</b> 0.310565 </td>
+                         <td>
+                        <iframe src="data/part7/cotan/meshes_bouncing_mesh_0090.html"  style="height: 100%; width: 95%;"></iframe>
+                        <br><b>Chamfer:</b> 0.3683 </td>
+                        </tr>
+                        <tr>
+                        <th> meshes_march2_mesh_0100 </th>
+                         <td>
+                        <iframe src="data/part7/noisy/meshes_march2_mesh_0100.html"  style="height: 100%; width: 95%;"></iframe>
+                        <br><b>Chamfer:</b> 0.1483 </td>
+                         <td>
+                        <iframe src="data/part7/weight_eq/meshes_march2_mesh_0100.html"  style="height: 100%; width: 95%;"></iframe>
+                        <br><b>Chamfer:</b> 0.278714 </td>
+                         <td>
+                        <iframe src="data/part7/weight_neq/meshes_march2_mesh_0100.html"  style="height: 100%; width: 95%;"></iframe>
+                        <br><b>Chamfer:</b> 0.1452 </td>
+                         <td>
+                        <br><b>Chamfer:</b> 0 </td>
+                         <td>
+                        <iframe src="data/part7/point_cleannet/meshes_march2_mesh_0100.html"  style="height: 100%; width: 95%;"></iframe>
+                        <br><b>Chamfer:</b> 0.184497 </td>
+                         <td>
+                        <iframe src="data/part7/cotan/meshes_march2_mesh_0100.html"  style="height: 100%; width: 95%;"></iframe>
+                        <br><b>Chamfer:</b> 0.2898 </td>
+                        </tr>
+                        <tr>
+                        <th> leg_n1 </th>
+                         <td>
+                        <iframe src="data/part7/noisy/leg_n1.html"  style="height: 100%; width: 95%;"></iframe>
+                        <br><b>Chamfer:</b> 42.782658 </td>
+                         <td>
+                        <iframe src="data/part7/weight_eq/leg_n1.html"  style="height: 100%; width: 95%;"></iframe>
+                        <br><b>Chamfer:</b> 5.918296 </td>
+                         <td>
+                        <iframe src="data/part7/weight_neq/leg_n1.html"  style="height: 100%; width: 95%;"></iframe>
+                        <br><b>Chamfer:</b> 10.4125 </td>
+                         <td>
+                        <br><b>Chamfer:</b> 0 </td>
+                         <td>
+                        <iframe src="data/part7/point_cleannet/leg_n1.html"  style="height: 100%; width: 95%;"></iframe>
+                        <br><b>Chamfer:</b> 46.822151 </td>
+                         <td>
+                        <iframe src="data/part7/cotan/leg_n1.html"  style="height: 100%; width: 95%;"></iframe>
+                        <br><b>Chamfer:</b> 54.555 </td>
+                        </tr>
                         
-                    </td>
-                    <td>
-                        <iframe src="data/week2/meshes_squat1_mesh_0050_pred.html" style="
-                        height:100%; width: 80%;"></iframe>
-                       <br><b>Chamfer:</b>  0.0564   <b>MSE:</b>  0.2203 <br>
-                    </td>
-                </tr>
-                <tr>
-                    <th>
-                        trimesh distance
-                    </th>
-            
-                    <td>
-                        <iframe src="data/week2/meshes_squat1_mesh_0050_noisy.html" style="
-                        height: 100%; width: 80%;"></iframe>
-                        <br>
-                        <span> meshes_squat1_mesh_0050</span>
-                    </td>
-                    <td>
-                        <iframe src="data/week2/meshes_squat1_mesh_0050_gt.html" style="
-                        height: 100%; width: 80%;"></iframe>
-                        <br><b>Chamfer:</b>  0.0285   <b>MSE:</b>  0.2179 <br>
                         
-                    </td>
-                    <td>
-                        <iframe src="data/week2/meshes_squat1_mesh_0050_pred.html" style="
-                        height:100%; width: 80%;"></iframe>
-                       <br><b>Chamfer:</b>  0.0564   <b>MSE:</b>  0.2203 <br>
-                    </td>
-                </tr>
-                <tr>
-                    <th>
-                        Cotangent(Ours)
-                    </th>
-                   
-                    <td>
-                        <iframe src="data/week2/meshes_squat1_mesh_0050_noisy.html" style="
-                        height: 100%; width: 80%;"></iframe>
-                        <br>
-                        <span> meshes_squat1_mesh_0050</span>
-                    </td>
-                    <td>
-                        <iframe src="data/week2/meshes_squat1_mesh_0050_gt.html" style="
-                        height: 100%; width: 80%;"></iframe>
-                        <br><b>Chamfer:</b>  0.0285   <b>MSE:</b>  0.2179 <br>
                         
-                    </td>
-                    <td>
-                        <iframe src="data/week2/meshes_squat1_mesh_0050_pred.html" style="
-                        height:100%; width: 80%;"></iframe>
-                       <br><b>Chamfer:</b>  0.0564   <b>MSE:</b>  0.2203 <br>
-                    </td>
-                </tr>
-                <tr>
-                    <th>
-                        Total Denoising
-                    </th>
-                
-                    <td>
-                        <iframe src="data/week2/meshes_squat1_mesh_0050_noisy.html" style="
-                        height: 100%; width: 80%;"></iframe>
-                        <br>
-                        <span> meshes_squat1_mesh_0050</span>
-                    </td>
-                    <td>
-                        <iframe src="data/week2/meshes_squat1_mesh_0050_gt.html" style="
-                        height: 100%; width: 80%;"></iframe>
-                        <br><b>Chamfer:</b>  0.0285   <b>MSE:</b>  0.2179 <br>
-                        
-                    </td>
-                    <td>
-                        <iframe src="data/week2/meshes_squat1_mesh_0050_pred.html" style="
-                        height:100%; width: 80%;"></iframe>
-                       <br><b>Chamfer:</b>  0.0564   <b>MSE:</b>  0.2203 <br>
-                    </td>
-                </tr>
-                <tr>
-                    <th>
-                        PointCleanNet
-                    </th>
-                    <td>
-                        <iframe src="data/week2/meshes_squat1_mesh_0050_noisy.html" style="
-                        height: 100%; width: 80%;"></iframe>
-                        <br>
-                        <span> meshes_squat1_mesh_0050</span>
-                    </td>
-                    <td>
-                        <iframe src="data/week2/meshes_squat1_mesh_0050_gt.html" style="
-                        height: 100%; width: 80%;"></iframe>
-                        <br><b>Chamfer:</b>  0.0285   <b>MSE:</b>  0.2179 <br>
-                        
-                    </td>
-                    <td>
-                        <iframe src="data/week2/meshes_squat1_mesh_0050_pred.html" style="
-                        height:100%; width: 80%;"></iframe>
-                       <br><b>Chamfer:</b>  0.0564   <b>MSE:</b>  0.2203 <br>
-                    </td>
-                </tr>
-               
            
 
         </tbody>
