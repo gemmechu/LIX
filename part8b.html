@@ -22,8 +22,81 @@
             </ul>
 		</div>
     <br>
-    <h2> Properties </h2>
+    <h2> Eigenvalue decomoposition </h2>
+
+    <p> <b>Report for each Laplacian || v - vc || </b><br>
+        L -> v = (eval1, eval2, …., evalk) <b>calculated by polyscope <a href="https://pypi.org/project/robust-laplacian/" style="background: none;padding: 0px;">robust Laplacian </a></b>
+        Cotangent Laplacian Lc -> vc = first k eigenvalues of the cotangent Laplacian
+        <br>
+        
+    </p>
     <br>
+    <table>
+        <tbody>
+            <tr>
+               <th>
+                    Name 
+                 </th>
+                 <th>first k eigen values (k=50)</th>
+                 <th>|| v - vc || </th>
+            </tr>
+                    
+            <tr>
+                <td>leg_n1</td>
+
+                <td>
+                    <img src="data/part8/leg/eig_b.png" style="height: 20em;">
+                    <br>
+                    <img src="data/part8/leg/eig_a.png" style="height: 20em;">
+                
+                </td>
+                <td><p>trimesh equal weight =  0.840179027</p>
+                
+                    <p>trimesh distance =  0.840410350</p>
+                    <p>Ours=  0.840549570</p>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>  meshes_bouncing_mesh_0090</td>
+
+                <td>
+                    <img src="data/part8/march/eig_b.png" style="height: 20em;">
+                    <br>
+                    <img src="data/part8/march/eig_a.png" style="height: 20em;">
+                
+                </td>
+                <td><p>trimesh equal weight =  18553.101376</p>
+                
+                    <p>trimesh distance =  18551.676985</p>
+                    <p>Ours=  18551.6828214</p>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>  chinese-lion_n1</td>
+
+                <td>
+                    <img src="data/part8/chinese/eig_b.png" style="height: 20em;">
+                    <br>
+                    <img src="data/part8/chinese/eig_a.png" style="height: 20em;">
+                
+                </td>
+                <td><p>trimesh equal weight =  0.977144</p>
+                
+                    <p>trimesh distance = 0.9780879</p>
+                    <p>Ours=  0.97890845</p>
+                </td>
+                
+            </tr>
+
+
+        </tbody>
+
+    </table>
+<br>
+<h3>Visualization eigen decomposition: Noisy data smoothed by our predicted laplacian</h3>
+<p>top 1 - Ours, bottom 3 - calculated by robust-laplacian from smoothed mesh by our model</p>
     <table>
         <tbody>
             <tr>
@@ -48,6 +121,21 @@
     
             </tr>
             
+            <tr>
+                <th>
+                    leg_n1 
+                    <br>
+                    Ours
+                 </th>
+               
+               <td> <img src="data/part8/leg2/1.png" width="700px" > </td>
+               <td> <img src="data/part8/leg2/2.png" width="700px" > </td>
+               <td> <img src="data/part8/leg2/3.png" width="700px" > </td>
+               <td> <img src="data/part8/leg2/4.png" width="700px" > </td>
+               <td> <img src="data/part8/leg2/5.png" width="700px" > </td>
+    
+            </tr>
+            <tr></tr>
             <tr>
                 <th>
                     chinese-lion_n1
@@ -84,19 +172,7 @@
                <td> <img src="data/part8/leg/5.png" width="700px" > </td>
     
             </tr>
-            <tr></tr>
-            <tr>
-                <th>
-                    leg_n1 
-                 </th>
-               
-               <td> <img src="data/part8/leg2/1.png" width="700px" > </td>
-               <td> <img src="data/part8/leg2/2.png" width="700px" > </td>
-               <td> <img src="data/part8/leg2/3.png" width="700px" > </td>
-               <td> <img src="data/part8/leg2/4.png" width="700px" > </td>
-               <td> <img src="data/part8/leg2/5.png" width="700px" > </td>
-    
-            </tr>
+            
     
         </tbody>
     
