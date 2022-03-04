@@ -1,0 +1,163 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style2.css" />
+    </head>
+    <body style="text-align: -webkit-center">
+        <div style="text-align: -webkit-left;">
+			<ul>
+                <li class="nav"><a href="https://newboxwhodis.eecs.umich.edu/~ghassena/2021/mesh%20denoising/">Week 0</a></li>
+                <li class="nav"><a href="week1.html">Week 1</a></li>
+                <li class="nav"><a href="week2.html" >Week 2 & 3</a></li>
+                <li class="nav"><a href="week4.html" >Week 4,5 & 6</a></li>
+                <li class="nav"><a href="part7.html" >Part 7</a></li>
+                <li class="nav"><a href="part8.html">Part 8</a></li>
+                <li class="nav"><a href="part9.html" style="background-color: #27cece;">Part 9</a></li>
+            </ul>
+		</div>
+        <h2 >LIX - End of internship</h2>
+        <div>
+			<ul>
+                <li class="nav"><a href="part9.html">De-Noising Results</a></li>
+                <li class="nav"><a href="part9b.html"  style="background-color: #33de58;">Laplacian Results</a></li>
+                <li class="nav"><a href="https://docs.google.com/document/d/1eZCVNSMC6TBObDDSk0PTvrCkYyfPehG9UMUyN8Eoxb0/edit?usp=sharing" target="blank" >Internship Report doc</a></li>
+            </ul>
+		</div>
+    <br>
+    
+    <h2> Eigenvalue decomoposition </h2>
+
+    <p> <b>Report for each Laplacian || v - vc || </b><br>
+        L -> v = (eval1, eval2, …., evalk) <b>calculated by polyscope <a href="https://pypi.org/project/robust-laplacian/" style="background: none;padding: 0px;">robust Laplacian </a></b>
+        Cotangent Laplacian Lc -> vc = first k eigenvalues of the cotangent Laplacian
+        <br>
+        
+    </p>
+    <br>
+    <table>
+        <tbody>
+            <tr>
+               <th>
+                    Name 
+                 </th>
+                 <th>first k eigen values (k=50)</th>
+                 <th>|| v - vc || </th>
+            </tr>
+                    
+            <tr>
+                <td>chinese-lion_n3</td>
+
+                <td>
+                    <img src="data/part9/chinese-lion_n1.png" style="height: 20em;">
+                
+                </td>
+                <td>
+                    7.659
+                </td>
+                
+            </tr>
+
+        </tbody>
+
+    </table>
+<br>
+<h3>Visualization eigen decomposition: Noisy data smoothed by our predicted laplacian</h3>
+<p>top 1 - Ours, bottom 3 - calculated by robust-laplacian from smoothed mesh by our model</p>
+    <table>
+        <tbody>
+            <tr>
+                <th>
+                   Name
+                </th>
+                <th>
+                    0
+                 </th>
+                 <th>
+                    1
+                 </th>
+                 <th>
+                     2
+                  </th>
+                  <th>
+                    3
+                 </th>
+                 <th>
+                    4
+                 </th>
+                 <th>
+                    5
+                 </th>
+                 <th>
+                    6
+                 </th>
+                 <th>
+                     7
+                  </th>
+                  <th>
+                    8
+                 </th>
+                 <th>
+                    9
+                 </th>
+    
+            </tr>
+            
+            <tr>
+                <th>
+                    leg_n1 
+                    <br>
+                 </th>
+                 <td> <img src="data/part9/leg_n1/0.png" width="700px" > </td>
+               <td> <img src="data/part9/leg_n1/1.png" width="700px" > </td>
+               <td> <img src="data/part9/leg_n1/2.png" width="700px" > </td>
+               <td> <img src="data/part9/leg_n1/3.png" width="700px" > </td>
+               <td> <img src="data/part9/leg_n1/4.png" width="700px" > </td>
+               <td> <img src="data/part9/leg_n1/5.png" width="700px" > </td>
+               <td> <img src="data/part9/leg_n1/6.png" width="700px" > </td>
+               <td> <img src="data/part9/leg_n1/7.png" width="700px" > </td>
+               <td> <img src="data/part9/leg_n1/8.png" width="700px" > </td>
+               <td> <img src="data/part9/leg_n1/9.png" width="700px" > </td>
+    
+            </tr>
+            <tr>
+                <th>
+                    meshes_bouncing_mesh_0090 
+                    <br>
+                 </th>
+                 <td> <img src="data/part9/meshes_bouncing_mesh_0090/0.png" width="700px" > </td>
+               <td> <img src="data/part9/meshes_bouncing_mesh_0090/1.png" width="700px" > </td>
+               <td> <img src="data/part9/meshes_bouncing_mesh_0090/2.png" width="700px" > </td>
+               <td> <img src="data/part9/meshes_bouncing_mesh_0090/3.png" width="700px" > </td>
+               <td> <img src="data/part9/meshes_bouncing_mesh_0090/4.png" width="700px" > </td>
+               <td> <img src="data/part9/meshes_bouncing_mesh_0090/5.png" width="700px" > </td>
+               <td> <img src="data/part9/meshes_bouncing_mesh_0090/6.png" width="700px" > </td>
+               <td> <img src="data/part9/meshes_bouncing_mesh_0090/7.png" width="700px" > </td>
+               <td> <img src="data/part9/meshes_bouncing_mesh_0090/8.png" width="700px" > </td>
+               <td> <img src="data/part9/meshes_bouncing_mesh_0090/9.png" width="700px" > </td>
+    
+            </tr>
+            <tr>
+                <th>
+                    meshes_march2_mesh_0100 
+                    <br>
+                 </th>
+                 <td> <img src="data/part9/meshes_march2_mesh_0100/0.png" width="700px" > </td>
+               <td> <img src="data/part9/meshes_march2_mesh_0100/1.png" width="700px" > </td>
+               <td> <img src="data/part9/meshes_march2_mesh_0100/2.png" width="700px" > </td>
+               <td> <img src="data/part9/meshes_march2_mesh_0100/3.png" width="700px" > </td>
+               <td> <img src="data/part9/meshes_march2_mesh_0100/4.png" width="700px" > </td>
+               <td> <img src="data/part9/meshes_march2_mesh_0100/5.png" width="700px" > </td>
+               <td> <img src="data/part9/meshes_march2_mesh_0100/6.png" width="700px" > </td>
+               <td> <img src="data/part9/meshes_march2_mesh_0100/7.png" width="700px" > </td>
+               <td> <img src="data/part9/meshes_march2_mesh_0100/8.png" width="700px" > </td>
+               <td> <img src="data/part9/meshes_march2_mesh_0100/9.png" width="700px" > </td>
+    
+            </tr>
+            
+    
+        </tbody>
+    
+    </table>  
+
+       
+    </body>
+</html>

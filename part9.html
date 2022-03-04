@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style2.css" />
+    </head>
+    <body style="text-align: -webkit-center">
+        <div style="text-align: -webkit-left;">
+			<ul>
+                <li class="nav"><a href="https://newboxwhodis.eecs.umich.edu/~ghassena/2021/mesh%20denoising/">Week 0</a></li>
+                <li class="nav"><a href="week1.html">Week 1</a></li>
+                <li class="nav"><a href="week2.html" >Week 2 & 3</a></li>
+                <li class="nav"><a href="week4.html" >Week 4,5 & 6</a></li>
+                <li class="nav"><a href="part7.html" >Part 7</a></li>
+                <li class="nav"><a href="part8.html">Part 8</a></li>
+                <li class="nav"><a href="part9.html" style="background-color: #27cece;">Part 9</a></li>
+            </ul>
+		</div>
+        <h2 >LIX - End of internship</h2>
+        <div>
+			<ul>
+                <li class="nav"><a href="part9.html" style="background-color: #33de58;">De-Noising Results</a></li>
+                <li class="nav"><a href="part9b.html">Laplacian Results</a></li>
+                <li class="nav"><a href="https://docs.google.com/document/d/1eZCVNSMC6TBObDDSk0PTvrCkYyfPehG9UMUyN8Eoxb0/edit?usp=sharing" target="blank">Internship Report doc</a></li>
+            </ul>
+		</div>
+    <br>
+    
+    <h2> Quantitative Results </h2>
+    <br>
+    <table style="
+            height:120%;
+            width: 100%;">
+                <tbody>
+                    <tr>
+                    
+                        <th>
+                            Ground Truth 
+                         </th>
+                         <th>
+                            Noisy 
+                         </th>
+                         <th>
+                            Cotangent(Ours)
+                         </th>
+
+                    </tr>
+                    <tr>
+                        
+                         <td>
+                        <iframe src="data/part7/smooth/chinese-lion_n3.html"  style="height: 100%; width: 95%;"></iframe>
+                        <br><b>chinese-lion_n3</b> </td>
+                         <td>
+                        <iframe src="data/part7/noisy/chinese-lion_n3.html"  style="height: 100%; width: 95%;"></iframe>
+                        <br><b>MSE:</b> 1354.629 </td>
+                         <td>
+                        <iframe src="data/part9/smoothed/chinese-lion_n3.html"  style="height: 100%; width: 95%;"></iframe>
+                        <br><b>MSE:</b> 1354.59 </td>
+                         <td>
+                    </tr>
+                    <tr>
+                        
+                        <td>
+                       <iframe src="data/part7/smooth/meshes_bouncing_mesh_0090.html"  style="height: 100%; width: 95%;"></iframe>
+                       <br><b>chinese-lion_n3</b> </td>
+                        <td>
+                       <iframe src="data/part7/noisy/meshes_bouncing_mesh_0090.html"  style="height: 100%; width: 95%;"></iframe>
+                       <br><b>MSE:</b> 0.1713 </td>
+                        <td>
+                       <iframe src="data/part9/smoothed/meshes_bouncing_mesh_0090.html"  style="height: 100%; width: 95%;"></iframe>
+                       <br><b>MSE:</b> 0.1713 </td>
+                        <td>
+                   </tr>
+                   <tr>
+                        
+                    <td>
+                   <iframe src="data/part7/smooth/meshes_march2_mesh_0100.html"  style="height: 100%; width: 95%;"></iframe>
+                   <br><b>chinese-lion_n3</b> </td>
+                    <td>
+                   <iframe src="data/part7/noisy/meshes_march2_mesh_0100.html"  style="height: 100%; width: 95%;"></iframe>
+                   <br><b>MSE:</b> 0.1728 </td>
+                    <td>
+                   <iframe src="data/part9/smoothed/meshes_march2_mesh_0100.html"  style="height: 100%; width: 95%;"></iframe>
+                   <br><b>MSE:</b> 0.1728 </td>
+                    <td>
+               </tr>
+               <tr>
+                        
+                <td>
+               <iframe src="data/part7/smooth/leg_n1.html"  style="height: 100%; width: 95%;"></iframe>
+               <br><b>chinese-lion_n3</b> </td>
+                <td>
+               <iframe src="data/part7/noisy/leg_n1.html"  style="height: 100%; width: 95%;"></iframe>
+               <br><b>MSE:</b> 207.55 </td>
+                <td>
+               <iframe src="data/part9/smoothed/leg_n1.html"  style="height: 100%; width: 95%;"></iframe>
+               <br><b>MSE:</b> 207.56 </td>
+                <td>
+           </tr>
+               
+                        
+           
+
+        </tbody>
+
+    </table>  
+    
+
+       
+    </body>
+</html>
